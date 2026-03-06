@@ -73,20 +73,26 @@
         md:opacity-100 md:flex-row md:items-center md:top-auto md:h-auto md:static md:shadow-none;
   }
   .headerNav ul.open {
-    @apply h-fit opacity-100 bg-white shadow-md w-full top-22 px-4 pb-3 duration-300 
-        /* tablet - desktop */
-        md:shadow-none md:px-0 md:pb-0;
+    @apply h-fit opacity-100 bg-primary shadow-md w-full py-5 text-white top-28 px-4 pb-3 duration-300 md:shadow-none md:px-0 md:pb-0;
+
   }
-  .toggleMenu span:first-child {
-    @apply inline-block w-9 h-1 rounded-xl bg-primary/80;
+  .toggleMenu span {
+    @apply block my-1 rounded-xl bg-primary justify-center items-center;
   }
-  .toggleMenu span:last-child {
-    @apply inline-block w-7 h-1 rounded-xl bg-primary/80;
+  .toggleMenu span:first-child{
+    @apply w-10 h-1;
   }
-  .toggleMenu {
-    @apply flex flex-col gap-1
-        /* tablet - desktop */
-        md:hidden;
+   .toggleMenu span:last-child{
+    @apply w-8 h-1;
+  }
+  .toggleMenu.open span:first-child{
+    @apply w-8 h-1 duration-100;
+  }
+    .toggleMenu.open span:last-child{
+    @apply w-10 h-1 duration-100;
+  }
+  .toggleMenu{
+    @apply mx-5 md:hidden;
   }
   .transparent {
     @apply hidden;
@@ -100,38 +106,50 @@
   .btn--primary {
     @apply bg-primary text-white hover:bg-white hover:text-primary;
   }
-    .card, .eventCard{
-        @apply bg-transparent w-65 px-10 py-10 rounded-xl shadow-md  text-white text-center outline-1 flex flex-col items-center;
-    }
-    .card img{
-        @apply size-10 mb-6 text-center;
-    }
-    .card h3, .eventCard h5{
-        @apply font-semibold mb-3 text-white;
-    }
-    .card p{
-        @apply mb-5;
-    }
-    .eventTab{
-        @apply font-bold  pr-3 cursor-pointer lg:px-10;
-    }
-    .eventTab:last-child{
-        @apply border-none;
-    }
-    .eventTab.active{
-        @apply text-secondary outline-1;
-    }
-    .eventItemWrap{
-        @apply flex flex-col flex-wrap gap-5;
-    }
-    .eventItem{
-        @apply hidden lg:hidden;
-    }
-    .eventItem.active{
-        @apply block lg:block ;
-    }
+  .card, .eventCard{
+    @apply bg-transparent w-65 px-10 py-10 rounded-xl shadow-md  text-white text-center outline-1 flex flex-col items-center;
+  }
+  .card img{
+    @apply size-10 mb-6 text-center;
+  }
+  .card h3, .eventCard h5{
+    @apply font-semibold mb-3 text-white;
+  }
+  .card p{
+    @apply mb-5;
+  }
+  .eventTab{
+    @apply font-bold  pr-3 cursor-pointer lg:px-10;
+  }
+  .eventTab:last-child{
+  @apply border-none;
+  }
+  .eventTab.active{
+  @apply text-secondary outline-1;
+  }
+  .eventItemWrap{
+  @apply flex flex-col flex-wrap gap-5;
+  }
+  .eventItem{
+  @apply hidden lg:hidden;
+  }
+  .eventItem.active{
+  @apply block lg:block ;
+  }
+  .reviewItem {
+    @apply py-10 px-12 text-center mb-4;
+  }
+  .reviewItem img {
+    @apply size-20 object-cover rounded-full mx-auto mb-4;
+  }
+  .reviewItem p {
+    @apply mb-4;
+  }
+  .storyItem p {
+    @apply py-5;
   }
 
+}
 
 
 

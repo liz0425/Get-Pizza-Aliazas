@@ -12,9 +12,9 @@
     />
   </head>
   <body>
-<!-- header -->
+    <!-- header -->
     <header class="py-7 fixed shadow-md w-full z-50">
-      <div class    ="container">
+      <div class="container">
         <!-- wrapper -->
         <div class="flex justify-between items-center">
           <!-- logo -->
@@ -41,7 +41,7 @@
       </div>
     </header>
 
-    <section class="pt-35 pb-5 md:pt-44 md:pb-5 px-7 lg:pb-5 lg:pt-35 ">
+    <section class="pt-35 pb-5 md:pt-44 md:pb-5 px-7 lg:pb-5 lg:pt-35">
       <div class="container">
         <div class="grid grid-cols-1 gap-10">
           <!-- announcement -->
@@ -59,7 +59,7 @@
                     d="M480 32c0-12.9-7.8-24.6-19.8-29.6S434.5.2 425.3 9.3L381.7 53c-48 48-113.1 75-181 75H64c-35.3 0-64 28.7-64 64v96c0 35.3 28.7 64 64 64v128c0 17.7 14.3 32 32 32h64c17.7 0 32-14.3 32-32V352h8.7c67.9 0 133 27 181 75l43.6 43.6c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6V300.3c18.6-8.8 32-32.5 32-60.4s-13.4-51.6-32-60.4zm-64 76.7v262.6C357.2 317.8 280.5 288 200.7 288H192v-96h8.7c79.8 0 156.5-29.8 215.3-83.3"
                   />
                 </svg>
-                <small class="text-primary font-semibold  ">
+                <small class="text-primary font-semibold">
                   This website provides information about our store. Online
                   Transactions are coming soon.
                 </small>
@@ -70,53 +70,38 @@
       </div>
     </section>
 
-    <section class="bg-secondary pb-5 pt-3">
+    <!-- youtube vid -->
+    <section id="about" class="pb-12 md:py-20">
       <div class="container">
         <!-- wrapper -->
-        <div class="grid grid-cols-1 gap-12 items-center lg:grid-cols-2">
-          <!-- img -->
-          <div class="lg:order-2">
-            <img
-              class="object-cover"
-              src="../IMG/banner-home.png"
-              alt="home-banner"
-            />
-          </div>
-          <div class="lg:order-1">
-            <h1>HUNGRY? <span>YOU'RE IN THE RIGHT PLACE</span></h1>
-            <!-- button -->
-            <ul class="flex">
-              <li><a class="btn btn--primary" href="#">VIEW OUR MENU</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- welcome get pizza -->
-    <section id="about" class="py-10 md:py-20">
-      <div class="container">
-        <!-- wrapper -->
-        <div class="flex flex-col gap-18 md:grid grid-cols-2">
-          <div class="relative">
-            <img
-              class="rounded-4xl shadow-md object-cover border-12 w-80 ml-15"
-              src="../img/3chefs.png"
-              alt="3 chefs standing together"
-            />
-            <img
-              class="rounded-4xl shadow-md object-cover border-12 absolute w-80 left-30 top-45"
-              src="../img/food.png"
-              alt="variety of food"
-            />
+        <div class="flex flex-col items-center md:flex-row md:gap-15">
+          <div class="w-fit md:w-200">
+            <iframe
+              class="md:w-200 md:h-120"
+              width="400"
+              height="250"
+              src="https://www.youtube.com/embed/Y6MHE0-CQAs?si=RlFO6G3bjHTHHMPM"
+              title="YouTube video player"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            >
+            </iframe>
           </div>
           <!-- details -->
-          <div class="mt-30">
-            <h2 class="title">WELCOME TO GET PIZZA</h2>
-            <p class="mt-5 mb-6 text-primary font-medium">
-              OUR CHEFS ARE WORKING 24/7 AND ARE READY TO ACCEPT VISITORS AND AT
-              ANY TIME OF THE DAY AND NIGHT
-            </p>
+          <div class="py-10 md:mt-0 md:mb-30 md:pt-15">
+            <h1 id="title" class="mb-6 text-primary">
+              SERVING GET PIZZAS BY THE SINCE 1985
+            </h1>
             <p class="mb-6">
               We would like to take this opportunity to welcome you at our Pizza
               House. We are offering a warm, friendly atmosphere to share a meal
@@ -127,9 +112,104 @@
       </div>
     </section>
 
-    <section class="py-12 md:py-20 bg-tertiary text-white">
+    <!-- our story -->
+    <section class="pb-12 md:py-20">
       <div class="container">
-        <!-- Title -->
+        <!-- title -->
+        <div class="text-center mb-12">
+          <h2 class="font-bold text-black uppercase">OUR STORY</h2>
+        </div>
+        <!-- wrapper -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <!-- accordion -->
+          <div class="space-y-4 md:pt-16">
+            <div class="storyItem">
+              <button
+                class="storyTab bg-primary text-white w-full flex justify-between items-center px-6 py-4 font-semibold"
+              >
+                <span>1985</span>
+                <span class="storyIcon">^</span>
+              </button>
+
+              <div class="storyContent hidden px-6 bg-white text-black">
+                <p>
+                  1985 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua.
+                </p>
+              </div>
+            </div>
+            <div class="storyItem">
+              <button
+                class="storyTab w-full flex justify-between items-center bg-primary text-white px-6 py-4 font-semibold"
+              >
+                <span>1990</span>
+                <span class="storyIcon">^</span>
+              </button>
+              <div class="storyContent hidden px-6 bg-white text-black">
+                <p>
+                  1990 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+            <div class="storyItem">
+              <button
+                class="storyTab w-full flex justify-between items-center bg-primary text-white px-6 py-4 font-semibold"
+              >
+                <span>2000</span>
+                <span class="storyIcon">^</span>
+              </button>
+              <div class="storyContent hidden px-6 bg-white text-black">
+                <p>
+                  2000 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+            <div class="storyItem">
+              <button
+                class="storyTab w-full flex justify-between items-center bg-primary text-white px-6 py-4 font-semibold"
+              >
+                <span>2010</span>
+                <span class="storyIcon">^</span>
+              </button>
+
+              <div class="storyContent hidden px-6 bg-white text-black">
+                <p>
+                  2010 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+            <div class="storyItem">
+              <button
+                class="storyTab w-full flex justify-between items-center bg-primary text-white px-6 py-4 font-semibold"
+              >
+                <span>2021</span>
+                <span class="storyIcon">^</span>
+              </button>
+              <div class="storyContent hidden px-6 bg-white text-black">
+                <p>
+                  2021 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- image -->
+          <div class="hidden lg:block">
+            <img
+              src="../img/meeting.png"
+              alt="meeting of people"
+              class="rounded-4xl shadow-md w-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- best food -->
+    <section class="py-12 md:py-20 bg-tertiary text-white">
+      <div class="container md:w-220">
+        <!-- title -->
         <div class="text-center max-w-3xl mx-auto mb-12">
           <h2 class="uppercase font-bold">
             WE OFFER PEOPLE BEST WAY TO EAT BEST FOOD
@@ -145,7 +225,6 @@
           >
             <img src="../img/pizzaa.png" class="w-16" alt="pizza" />
           </div>
-
           <!-- Burger -->
           <div
             class="eventTab w-20 h-20 rounded-full bg-transparent flex items-center justify-center p-2 cursor-pointer"
@@ -167,7 +246,6 @@
           >
             <img src="../img/drinks.png" class="w-16" alt="drink" />
           </div>
-
           <!-- Desserts -->
           <div
             class="eventTab w-20 h-20 rounded-full bg-transparent flex items-center justify-center p-2 cursor-pointer"
@@ -191,14 +269,10 @@
                     alt="Prosciutto Pizza"
                   />
                 </div>
-
                 <h5 class="uppercase font-semibold">PROSCIUTTO PIZZA</h5>
-
                 <p class="text-white font-semibold">$25.00</p>
-
                 <!-- Stars -->
                 <div class="text-secondary text-lg my-2">★★★★★</div>
-
                 <a
                   href="#"
                   class="inline-block mt-3 border border-primary px-6 py-2 rounded-lg"
@@ -216,13 +290,9 @@
                     alt="Barbecue Pizza"
                   />
                 </div>
-
                 <h5 class="uppercase font-semibold">BARBECUE PIZZA</h5>
-
                 <p class="text-white font-semibold">$25.00</p>
-
                 <div class="text-secondary text-lg my-2">★★★★★</div>
-
                 <a
                   href="#"
                   class="inline-block mt-3 border border-primary px-6 py-2 rounded-lg"
@@ -245,14 +315,11 @@
                     alt="Prosciutto Pizza"
                   />
                 </div>
-
                 <h5 class="uppercase font-semibold">CHEESE BURGER</h5>
-
                 <p class="text-white font-semibold">$15.00</p>
 
                 <!-- Stars -->
                 <div class="text-secondary text-lg my-2">★★★★★</div>
-
                 <a
                   href="#"
                   class="inline-block mt-3 border border-primary px-6 py-2 rounded-lg"
@@ -270,13 +337,9 @@
                     alt="Barbecue Pizza"
                   />
                 </div>
-
                 <h5 class="uppercase font-semibold">CHEESE BURGER</h5>
-
                 <p class="text-white font-semibold">$18.00</p>
-
                 <div class="text-secondary text-lg my-2">★★★★★</div>
-
                 <a
                   href="#"
                   class="inline-block mt-3 border border-primary px-6 py-2 rounded-lg"
@@ -288,7 +351,7 @@
           </div>
           <!-- CHICKEN  -->
           <div class="eventItem" id="tabs-3-detail">
-            <div class="grid grid-cols-2 gap-2 md:grid md:grid-cols-2 md:gap-6">
+            <div class="grid grid-cols-2 gap-2 md:grid md;grid-cols-2 md:gap-6">
               <!-- Card -->
               <div class="border border-white/30 rounded-xl p-6 text-center">
                 <div class="flex justify-center mb-6">
@@ -298,14 +361,10 @@
                     alt="Prosciutto Pizza"
                   />
                 </div>
-
                 <h5 class="uppercase font-semibold">FILLET WITH BREAD</h5>
-
                 <p class="text-white font-semibold">$45.00</p>
-
                 <!-- Stars -->
                 <div class="text-secondary text-lg my-2">★★★★★</div>
-
                 <a
                   href="#"
                   class="inline-block mt-3 border border-primary px-6 py-2 rounded-lg"
@@ -313,7 +372,6 @@
                   Read more
                 </a>
               </div>
-
               <!-- Card -->
               <div class="border border-white/30 rounded-xl p-6 text-center">
                 <div class="flex justify-center mb-6">
@@ -323,13 +381,9 @@
                     alt="Barbecue Pizza"
                   />
                 </div>
-
                 <h5 class="uppercase font-semibold">FILLET WITH BREAD</h5>
-
                 <p class="text-white font-semibold">$58.00</p>
-
                 <div class="text-secondary text-lg my-2">★★★★★</div>
-
                 <a
                   href="#"
                   class="inline-block mt-3 border border-primary px-6 py-2 rounded-lg"
@@ -351,14 +405,10 @@
                     alt="Prosciutto Pizza"
                   />
                 </div>
-
                 <h5 class="uppercase font-semibold">ORANGE DRINKS</h5>
-
                 <p class="text-white font-semibold">$10.00</p>
-
                 <!-- Stars -->
                 <div class="text-secondary text-lg my-2">★★★★★</div>
-
                 <a
                   href="#"
                   class="inline-block mt-3 border border-primary px-6 py-2 rounded-lg"
@@ -366,7 +416,6 @@
                   Read more
                 </a>
               </div>
-
               <!-- Card -->
               <div class="border border-white/30 rounded-xl p-6 text-center">
                 <div class="flex justify-center mb-6">
@@ -376,13 +425,9 @@
                     alt="Barbecue Pizza"
                   />
                 </div>
-
                 <h5 class="uppercase font-semibold">ORANGE DRINKS</h5>
-
                 <p class="text-white font-semibold">$12.00</p>
-
                 <div class="text-secondary text-lg my-2">★★★★★</div>
-
                 <a
                   href="#"
                   class="inline-block mt-3 border border-primary px-6 py-2 rounded-lg"
@@ -395,7 +440,7 @@
 
           <!-- DESSERT  -->
           <div class="eventItem" id="tabs-5-detail">
-            <div class="grid grid-cols-2 gap-2 md:grid lg:grid-cols-2 lg:gap-6">
+            <div class="grid grid-cols-2 gap-2 md:grid md:grid-cols-2 md:gap-6">
               <!-- Card -->
               <div class="border border-white/30 rounded-xl p-6 text-center">
                 <div class="flex justify-center mb-6">
@@ -405,14 +450,10 @@
                     alt="Prosciutto Pizza"
                   />
                 </div>
-
                 <h5 class="uppercase font-semibold">MUFFIN</h5>
-
                 <p class="text-white font-semibold">$23.00</p>
-
                 <!-- Stars -->
                 <div class="text-secondary text-lg my-2">★★★★★</div>
-
                 <a
                   href="#"
                   class="inline-block mt-3 border border-primary px-6 py-2 rounded-lg"
@@ -430,13 +471,9 @@
                     alt="Barbecue Pizza"
                   />
                 </div>
-
                 <h5 class="uppercase font-semibold">MUFFIN</h5>
-
                 <p class="text-white font-semibold">$20.00</p>
-
                 <div class="text-secondary text-lg my-2">★★★★★</div>
-
                 <a
                   href="#"
                   class="inline-block mt-3 border border-primary px-6 py-2 rounded-lg"
@@ -444,6 +481,102 @@
                   Read more
                 </a>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- clients review -->
+    <section class="py-12 md:py-20">
+      <div class="container">
+        <h2 class="text-center mb-10">CLIENTS REVIEW</h2>
+        <!-- wrapper -->
+        <div class="md:max-w-2xl md:mx-auto">
+          <div class="reviewSlider">
+            <!-- slider 1  -->
+            <div class="reviewItem text-center">
+              <img
+                class="size-20 object-cover rounded-full mx-auto mb-4"
+                src="../IMG/feedback.png"
+                alt="client profile picture"
+              />
+              <p class="my-5 md:justify-center">
+                "Etiam sapien sem at sagittis congue augue massa varius sodales
+                sapien undo tempus dolor egestas magna suscipit magna tempus
+                aliquet porta sodales augue suscipit luctus neque"
+              </p>
+              <p>Patrick Greenish</p>
+            </div>
+            <!-- slider 2  -->
+            <div class="reviewItem text-center">
+              <img
+                class="size-20 object-cover rounded-full mx-auto mb-4"
+                src="../IMG/feedback2.png"
+                alt="client profile picture"
+              />
+              <p class="my-5">
+                "Etiam sapien sem at sagittis congue augue massa varius sodales
+                sapien undo tempus dolor egestas magna suscipit magna tempus
+                aliquet porta sodales augue suscipit luctus neque"
+              </p>
+              <p>Patrick Greenish</p>
+            </div>
+            <!-- slider 3  -->
+            <div class="reviewItem text-center">
+              <img
+                class="size-20 object-cover rounded-full mx-auto mb-4"
+                src="../IMG/feedback3.png"
+                alt="client profile picture"
+              />
+              <p class="my-5">
+                "Etiam sapien sem at sagittis congue augue massa varius sodales
+                sapien undo tempus dolor egestas magna suscipit magna tempus
+                aliquet porta sodales augue suscipit luctus neque"
+              </p>
+              <p>Patrick Greenish</p>
+            </div>
+            <!-- slider 4  -->
+            <div class="reviewItem text-center">
+              <img
+                class="size-20 object-cover rounded-full mx-auto mb-4"
+                src="../IMG/feedback4.png"
+                alt="client profile picture"
+              />
+              <p class="my-5">
+                "Etiam sapien sem at sagittis congue augue massa varius sodales
+                sapien undo tempus dolor egestas magna suscipit magna tempus
+                aliquet porta sodales augue suscipit luctus neque"
+              </p>
+              <p>Patrick Greenish</p>
+            </div>
+            <!-- slider 5  -->
+            <div class="reviewItem text-center">
+              <img
+                class="size-20 object-cover rounded-full mx-auto mb-4"
+                src="../IMG/feedback5.png"
+                alt="client profile picture"
+              />
+              <p class="my-5">
+                "Etiam sapien sem at sagittis congue augue massa varius sodales
+                sapien undo tempus dolor egestas magna suscipit magna tempus
+                aliquet porta sodales augue suscipit luctus neque"
+              </p>
+              <p>Patrick Greenish</p>
+            </div>
+            <!-- slider 6  -->
+            <div class="reviewItem text-center">
+              <img
+                class="size-20 object-cover rounded-full mx-auto mb-4"
+                src="../IMG/feedback6.png"
+                alt="client profile picture"
+              />
+              <p class="my-5">
+                "Etiam sapien sem at sagittis congue augue massa varius sodales
+                sapien undo tempus dolor egestas magna suscipit magna tempus
+                aliquet porta sodales augue suscipit luctus neque"
+              </p>
+              <p>Patrick Greenish</p>
             </div>
           </div>
         </div>
@@ -495,7 +628,7 @@
 
     <!-- footer -->
     <footer id="footer" class="bg-white pt-14 pb-14 text-center">
-      <div class="container">
+      <div class="container md:w-220">
         <!-- Logo -->
         <div class="flex justify-center mb-10">
           <img
@@ -529,5 +662,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="../js/toggle-menu.js"></script>
     <script src="../js/tab.js"></script>
+    <script src="../js/slider.js"></script>
+    <script src="../js/accordion.js"></script>
   </body>
 </html>
